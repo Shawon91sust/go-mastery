@@ -44,5 +44,7 @@ func main() {
 
 	// Zero value demo (important in Go)
 	var z Money
-	fmt.Printf("Zero value Money: %+v -> %s\n", z, z.String())
+	fmt.Printf("Raw struct with %%#v: %#v\n", z)
+	fmt.Printf("Default formatting (Stringer): %v\n", z)
+	fmt.Printf("Explicit String(): %s\n", z.String())
 }
